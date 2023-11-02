@@ -15,5 +15,6 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
 
-[![Autor](https://img.shields.io/badge/Autor-Arismário%20Neves-blue?color=2b9348)](https://github.com/arismarioneves)
-[![HitCount](https://views.whatilearened.today/views/github/arismarioneves/arismarioneves.svg)](https://github.com/coderjojo/creative-profile-readme)
+[![autor](https://img.shields.io/badge/Autor-Arismário%20Neves-blue?color=2b9348)](https://github.com/arismarioneves)
+[![gists](https://badges.pufler.dev/gists/arismarioneves)](https://gist.github.com/arismarioneves)
+[![views](https://views.whatilearened.today/views/github/arismarioneves/arismarioneves.svg)](https://github.com/arismarioneves)
