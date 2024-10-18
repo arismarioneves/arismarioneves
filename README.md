@@ -1,5 +1,7 @@
 ### Olá Mundo! 👋
 
+I'm a Software Engineer, Tech Lead and 🌱 Generative AI enthusiast
+
 ```zsh
 > composer install
 ```
@@ -16,8 +18,8 @@ php -r "unlink('composer-setup.php');"
 ```
 
 <p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=git,php,mysql,js,c,java,py,vue,nodejs,docker,bash,supabase,gcp" />
+  <a href="https://arismario.dev/">
+    <img src="https://go-skill-icons.vercel.app/api/icons?i=git,php,mysql,js,c,java,py,streamlit,nodejs,docker,bash,ollama,gcp" />
   </a>
 </p>
 
