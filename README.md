@@ -24,5 +24,5 @@ php -r "unlink('composer-setup.php');"
 </p>
 
 [![autor](https://img.shields.io/badge/Autor-Arismário%20Neves-blue?color=2b9348)](https://github.com/arismarioneves)
-[![gists](https://badges.pufler.dev/gists/arismarioneves)](https://gist.github.com/arismarioneves)
+[![gists](https://img.shields.io/badge/gists-4-blue)](https://gist.github.com/arismarioneves)
 [![views](https://views.whatilearened.today/views/github/arismarioneves/arismarioneves.svg)](https://github.com/arismarioneves)
