@@ -1,0 +1,41 @@
+name: GitHub stats card
+
+on:
+  schedule:
+    - cron: "0 6 * * *" # diário às 06:00 UTC (03:00 BRT)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  card:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      # Pinado por SHA (v1.3.0): o job tem token com contents: write
+      - uses: Sagargupta16/github-stats-card-action@6490d5bfb062551f8721ff5250d936cacf034775 # v1.3.0
+      - uses: Sagargupta16/github-stats-card-action@6490d5bfb062551f8721ff5250d936cacf034775 # v1.3.0
+        with:
+          theme: light
+          output: assets/github-stats-light.svg
+      - uses: Sagargupta16/github-stats-card-action@6490d5bfb062551f8721ff5250d936cacf034775 # v1.3.0
+        with:
+          layout: compact
+          output: assets/github-stats-compact.svg
+      - uses: Sagargupta16/github-stats-card-action@6490d5bfb062551f8721ff5250d936cacf034775 # v1.3.0
+        with:
+          theme: light
+          layout: compact
+          output: assets/github-stats-compact-light.svg
+
+      - name: Commit the cards if they changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: refresh github stats card"
+            git push
+          fi
